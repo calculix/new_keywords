@@ -5,9 +5,20 @@ Distributed under GNU General Public License v3.0
 
 
 
+---
+
+[ABAQUS](#ABAQUS) |
+[CALCULIX](#CALCULIX)
+
+---
+
+<br/><br/>
+
+
+
 # New Abaqus/CalculiX keywords
 
-A tool to track new keywords in CalculiX and Abaqus releases.
+A tool to track new keywords in CalculiX and Abaqus releases. Abaqus keywords are taken from SIMULIA User Assistance. CalculiX keywords are extracted from the official PDF documentation.
 
 <br/><br/>
 
@@ -15,7 +26,54 @@ A tool to track new keywords in CalculiX and Abaqus releases.
 
 # ABAQUS
 
-The reference version is 2019.
+The reference version is 2016.
+
+New keywords in ABAQUS 2017:
+
+    *ACTIVATE ELEMENTS
+    *CONSTITUENT
+    *CRUSH STRESS
+    *CRUSH STRESS VELOCITY FACTOR
+    *ELEMENT PROGRESSIVE ACTIVATION
+    *EVENT SERIES
+    *EVENT SERIES TYPE
+    *MEAN FIELD HOMOGENIZATION
+    *PARAMETER TABLE
+    *PARAMETER TABLE TYPE
+    *PROPERTY TABLE
+    *PROPERTY TABLE TYPE
+    *SOFT ROCK HARDENING
+    *SOFT ROCK PLASTICITY
+    *SUPERELASTIC
+    *SUPERELASTIC HARDENING
+    *SUPERELASTIC HARDENING MODIFICATIONS
+    *TABLE COLLECTION
+    *WIND
+
+New keywords in ABAQUS 2018:
+
+    *COMBINATORIAL RULE
+    *CONCENTRATION TENSOR
+    *ELEMENT RECOVERY MATRIX
+    *ELEMENT SOLUTION-DEPENDENT VARIABLES
+    *FATIGUE
+    *GLOBAL RESPONSE
+    *MATRIX EXPORT
+    *PARTICLE OUTLET
+    *PARTICLE OUTLET FLOW
+    *PIEZOELECTRIC DAMPING
+    *SCALE MASS
+    *SCALE STIFFNESS
+    *SCALE STRESS DESIGN
+    *SCALE THERMAL CONDUCTIVITY
+    *SUBSTRUCTURE OUTPUT
+    *WIND
+
+New keywords in ABAQUS 2019:
+
+    *CONCRETE FAILURE
+    *MEAN FIELD DAMAGE
+    *TRANSVERSE SHEAR
 
 New keywords in ABAQUS 2020:
 
@@ -39,19 +97,33 @@ New keywords in ABAQUS 2021:
     *SECTION CURVATURE
     *SECTION TANGENT
 
-<br/><br/>
-
-
-
 # CALCULIX
 
-The reference version is 215.
+The reference version is 2.12.
 
-New keywords in CALCULIX 216:
+New keywords in CALCULIX 2.13:
+
+    *GAP HEAT GENERATION
+    *NETWORK MPC
+    *USER ELEMENT
+
+New keywords in CALCULIX 2.14:
+
+    *CONSTRAINT
+    *FILTER
+    *INITIAL STRAIN INCREASE
+    *MEMBRANE SECTION
+
+New keywords in CALCULIX 2.15:
+
+    *BASE MOTION
+    *REFINE MESH
+
+New keywords in CALCULIX 2.16:
 
     ---
 
-New keywords in CALCULIX 217:
+New keywords in CALCULIX 2.17:
 
     *CORRELATION LENGTH
     *DISTRIBUTION

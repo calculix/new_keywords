@@ -20,6 +20,8 @@ for f in sorted(os.listdir('.')):
     if len(match):
         solver = match[0][0].upper()
         year = match[0][1]
+        if 'CALCULIX' in solver:
+            year = year[0] + '.' + year[1:]
         if solver in files:
             files[solver].append((year, f), )
         else:
@@ -34,7 +36,8 @@ for solver in files.keys():
 
     # Get the first version to start comparison from
     year1, f1 = files[solver][0]
-    print(solver, '- reference version is', year1)
+    print('# ' + solver + '\n')
+    print('The reference version is ' + year1 + '.\n')
     for i in range(len(files[solver]) - 1):
         year2, f2 = files[solver][i+1] # second version
 
@@ -45,9 +48,14 @@ for solver in files.keys():
             lines2 = f.readlines()
 
         # Print comparison log
-        print('\nNew keywords in', solver, year2)
+        print('New keywords in {} {}:\n'.format(solver, year2))
+        count = 0
         for line in lines2:
             if line not in lines1:
-                print('\t', line.rstrip())
+                print(' '*4 + line.rstrip())
+                count += 1
+        if not count:
+            print(' '*4 + '-'*3)
 
         year1, f1 = files[solver][i+1]
+        print()
