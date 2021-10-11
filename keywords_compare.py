@@ -1,26 +1,47 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" © Ihor Mirzov, 2021
+"""© Ihor Mirzov, 2021
 Distributed under GNU General Public License v3.0
 
 Shows the history of the keywords evolution
-in Abaqus and Calculix """
-
-# TODO *WIND keywords is repeating in Abaqus
+in Abaqus and Calculix."""
 
 import os
 import re
 
-def main():
+
+# Removes keyword duplicates in a file
+def filtr():
+    # file_name = 'keywords_abaqus_2020.txt'
+    file_name = 'keywords_calculix_215.txt'
+
+    with open(file_name, 'r') as f:
+        lines = f.readlines()
+
+    print('Before filter:', len(lines))
+    lines = sorted(set(lines))
+    print('After filter:', len(lines))
+
+    for l in lines:
+        print(l.strip())
+
+    # with open(file_name, 'w') as f:
+    #     f.writelines(lines)
+
+
+# Perform comparison and write report
+def compare():
 
     # Clean screen
     os.system('cls' if os.name=='nt' else 'clear')
 
     # Get list of files to process
     files = {}
-    for f in sorted(os.listdir('.')):
+    d = '.'
+    for f in sorted(os.listdir(d)):
         match = re.findall(r'keywords_(.+)_(\d+)\.txt', f)
+        f = os.path.normpath(os.path.join(d, f))
         if len(match):
             solver = match[0][0].upper()
             year = match[0][1]
@@ -68,5 +89,7 @@ def main():
             year1, f1 = files[solver][i+1]
             print()
 
+
 if __name__ == '__main__':
-    main()
+    # filtr()
+    compare()

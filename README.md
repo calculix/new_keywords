@@ -20,6 +20,8 @@ Distributed under GNU General Public License v3.0
 
 A tool to track new keywords in CalculiX and Abaqus releases. Abaqus keywords are taken from SIMULIA User Assistance. CalculiX keywords are extracted from the official PDF documentation.
 
+Below you can see the script output.
+
 <br/><br/>
 
 
@@ -127,3 +129,11 @@ New keywords in CALCULIX 2.17:
     *DISTRIBUTION
     *GEOMETRIC TOLERANCES
     *ROBUST DESIGN
+
+New keywords in CALCULIX 2.18:
+
+    *CRACK PROPAGATION
+    *DESIGN RESPONSE
+    *FEASIBLE DIRECTION
+    *GEOMETRIC CONSTRAINT
+    *USER SECTION
