@@ -5,14 +5,16 @@
 Distributed under GNU General Public License v3.0
 
 Shows the history of the keywords evolution
-in Abaqus and Calculix."""
+in Abaqus and Calculix.
+"""
 
 import os
 import re
 
 
-# Removes keyword duplicates in a file
 def filtr():
+    """Removes keyword duplicates in a file."""
+
     # file_name = 'keywords_abaqus_2020.txt'
     file_name = 'keywords_calculix_215.txt'
 
@@ -28,13 +30,11 @@ def filtr():
 
     # with open(file_name, 'w') as f:
     #     f.writelines(lines)
+    pass
 
 
-# Perform comparison and write report
 def compare():
-
-    # Clean screen
-    os.system('cls' if os.name=='nt' else 'clear')
+    """Perform comparison and write report."""
 
     # Get list of files to process
     files = {}
@@ -91,5 +91,9 @@ def compare():
 
 
 if __name__ == '__main__':
+
+    # Clean screen
+    os.system('cls' if os.name=='nt' else 'clear')
+
     # filtr()
     compare()

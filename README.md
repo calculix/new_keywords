@@ -1,4 +1,4 @@
-© Ihor Mirzov, February 2021  
+© Ihor Mirzov, February 2021
 Distributed under GNU General Public License v3.0
 
 <br/><br/>
@@ -97,6 +97,19 @@ New keywords in ABAQUS 2021:
     *SECTION CURVATURE
     *SECTION TANGENT
 
+New keywords in ABAQUS 2022:
+
+    *COUPLED THERMAL-ELECTROCHEMICAL
+    *EIGENSTRAIN
+    *GAP DIFFUSIVITY
+    *INTERFACE REACTION
+    *MULTIPHYSICS LOAD
+    *PLASTICITY CORRECTION
+    *POROUS ELECTRODE THEORY
+    *SECTION INERTIA
+    *SECTION STIFFNESS
+    *SUBSTRUCTURE CHANGE
+
 # CALCULIX
 
 The reference version is 2.12.
@@ -137,3 +150,7 @@ New keywords in CALCULIX 2.18:
     *FEASIBLE DIRECTION
     *GEOMETRIC CONSTRAINT
     *USER SECTION
+
+New keywords in CALCULIX 2.19:
+
+    *HCF
