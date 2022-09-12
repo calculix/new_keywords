@@ -154,3 +154,7 @@ New keywords in CALCULIX 2.18:
 New keywords in CALCULIX 2.19:
 
     *HCF
+
+New keywords in CALCULIX 2.20:
+
+    ---
