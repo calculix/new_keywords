@@ -36,12 +36,12 @@ def filtr1():
 def filtr2():
     """Find all uppercase lines in a file."""
 
-    file_name = 'keywords_abaqus_2023.txt'
+    file_name = 'keywords_abaqus_2024.txt'
     keywords = []
     with open(file_name, 'r') as f:
         for l in f.readlines():
             if l and l == l.upper():
-                keywords.append(l)
+                keywords.append('*' + l.lstrip())
     keywords = sorted(set(keywords))
     for l in keywords:
         print(l.strip())

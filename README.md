@@ -131,6 +131,12 @@ New keywords in ABAQUS 2023:
     *SUBMODEL CUT
     *UNIFORM
 
+New keywords in ABAQUS 2024:
+
+    *ALLOWABLE STRESS
+    *REDUCED BASIS GENERATE
+    *WEAR SURFACE PROPERTIES
+
 # CALCULIX
 
 The reference version is 2.12.
